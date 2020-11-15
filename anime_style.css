@@ -1,0 +1,651 @@
+body{
+	font-family: Arial;
+}
+#anime_head{
+text-align:center;
+
+}
+#no_head{
+	color:#a31aff;
+}
+p{
+	font-size: 16px;
+}
+.dif{
+	background-color: #a31aff;
+}
+.logo{
+	float:left;
+}
+#theme{
+	float:right;
+	width:50px;
+	height:50px;
+}
+.theme_2{
+	float:right;
+	width:50px;
+	height:50px;
+	margin-right:5px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #00a3cc;
+}
+
+.area{
+	padding-bottom:170px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.bottom_sec {
+	/*footer of the site*/
+margin-top:100px;
+	background-color: lightgrey;
+	padding: 10px;
+	margin-bottom: 10px;
+	/*position:relative;
+	bottom:0;
+	width:1480px;*/
+	/*position: relative; absolute*/
+}
+.hxh_cover{
+	float:left;
+	height:200px;
+	width:200px;
+	margin-right:15px;
+}
+.gint_cover{
+	float:left;
+	height:200px;
+	width:200px;
+	margin-right:15px;
+}
+.gin_cover{
+	float:left;
+	margin-right:15px;
+}
+.AOT_cover{
+	float:left;
+	margin-right:15px;
+}
+.edit_link{
+	/*remove underline from site link*/
+	text-decoration:none;
+	color:#2384b8;
+}
+#mybtn{
+	display:none;
+	position: fixed; /*so it cannot be moved*/
+	bottom:20px; /*bottom pad*/
+	right:30px; /*right pad*/
+	font-size: 16px; /*font size*/
+	border: none;
+	outline: none;
+	background-color: #63b8e6;
+	color: white; /*text color*/
+	cursor: pointer;
+	padding:15px;
+	border-radius: 4px;
+}
+#mybtn:hover{
+	/*on hover*/
+	background-color: #557A95;
+	color: white;
+}
+#btn{
+/*code for feedback button*/
+background-color: #3399ff;
+border: none;
+color:white;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor:pointer; /*change the shape of the cursor*/
+padding: 12px 28px;	
+}
+#btn:hover {
+	/*apply a border to the button*/
+	border:2px solid #999999;
+}
+#gint_1{
+float:left;
+margin-right: 5px;
+}
+#gint_2{
+float:right;
+width:500px;
+height:300px;
+margin-left: 5px;
+/*margin-right:600px*/
+}
+/*span {
+  font-size: 25px;
+  float: right;
+  display: block;
+  font-weight: bold;
+}*/
+.domgf{
+	float:left;
+margin-right: 5px;
+margin-left:10px;
+}
+.jojo_cover{
+	float:left;
+	height:200px;
+	width:200px;
+	margin-right:15px;
+}
+.jojo_cover_2{
+float:left;
+	height:200px;
+	width:180px;
+	margin-right:15px;
+}	
+
+.onep_cover{
+	float:left;
+	height:200px;
+	width:150px;
+	margin-right:15px;
+}
+.solo{
+	float:left;
+	/*height:200px;
+	width:150px;*/
+	margin-right:15px;
+}
+.jojo_class{
+	float:left;
+	width:50%;
+	
+}
+.gintama_class{
+	float: left;
+	width:50%;
+	
+}
+.dom_class{
+	float:left;
+	width:50%;
+}
+.why_images{
+	padding-bottom: 180px;
+}
+.gintama_ani{
+	padding-bottom:50px;
+}
+.aot_anime{
+	padding-bottom:70px;
+}
+.home{
+	padding-bottom:10px;
+}
+.home_2{
+	padding-bottom:20px;
+}
+.home_img{
+	width:200px;
+}
+.nognol{
+	float:left;
+	margin-right:15px;
+}
+.nogame_nolife_class{
+	padding-bottom:130px;
+}
+.hero{
+	padding-bottom:60px;
+}
+.hero_img{
+	float:left;
+	margin-right:15px;
+}
+.over_lord_img{
+	float:left;
+	margin-right: 15px;
+}
+.over_lord{
+	padding-bottom:220px;
+}
+.wolf{
+	padding-bottom:130px;
+}
+.wolf_img{
+	float:left;
+	margin-right:15px;
+	height: 250px;
+}
+.solo_web{
+	padding-bottom:120px;
+}
+.TOG_img{
+	float:left;
+	margin-right:15px;
+	height: 250px;
+	width: 200px;
+}
+.tower_of_god{
+	padding-bottom:180px;
+}
+.god_ohs{
+	float:left;
+	margin-right:15px;
+	height: 250px;
+	width: 200px;
+}
+.TGOHS{
+	padding-bottom: 150px;
+}
+.feedback_form{
+	text-align: center;
+	padding-bottom:10px;
+}
+.feed_btn{
+	text-align:center;
+	
+}
+.crunchy{
+	padding-bottom: 20px;
+}
+.crunchy_2{
+	padding-bottom: 20px;
+}
+.cr{
+	float:left;
+	margin-right: 15px;
+}
+.fun{
+	padding-bottom:40px;
+}
+.fun_2{
+	padding-bottom: 60px;
+}
+.funima{
+	float:left;
+	margin-right:15px;
+}
+.anime_man{
+	width:50%;
+	float:left;
+}
+#joe{
+	float: left;
+	margin-right:10px;
+	
+}
+.cd{
+	float:left;
+	width:50%;
+	padding-bottom:40px;
+}
+#cdawg_vid{
+	float:left;
+	margin-right: 5px;
+}
+.aki{
+	float:left;
+	width:50%;
+}
+.akid{
+	float:left;
+	margin-right:10px;
+}
+.misty_chron{
+	float:left;
+	margin-right:10px;
+}
+.misty{
+	float:left;
+	width:50%;
+	padding-bottom:20px;
+}
+
+.slide{
+	width:250px;
+	height:300px;
+}
+.slide_2{
+	/*width:400px;
+	height:300px;*/
+}
+.slide-container{
+max-width:200px;
+position:relative;
+margin:auto;
+
+}
+.home_slide{
+text-align:center;	
+
+}
+.numbertext{
+/*display the numbers*/
+color:#33bbff;
+font-size:12px;
+padding:8px 12px;
+position: absolute;
+/*top:0;*/
+margin-left:50px;
+}
+
+.dot{
+/*dots in image*/
+height:15px;
+width:15px;
+margin:0 2px;
+background-color:#bbb;
+border-radius:50%;
+display:inline-block;
+transition: background-color 0.6s ease;
+
+}
+
+.act{
+/*color of active image*/
+background-color: black;
+}
+/*Media queries*/
+@media screen and (max-width:1300px){
+.anime_man,.cd,.aki, .misty{
+	width:50%;
+}}
+
+@media screen and (max-width:1250px){
+.anime_man,.cd,.aki,.misty{
+	width:50%;/*50*/
+	
+}	
+}
+
+@media screen and (max-width:1235px){
+.anime_man,.cd,.aki, .misty{
+	width:50%;/*48 50*/
+}}
+
+@media screen and (max-width:1200px){
+	.misty{
+	float:left;
+	width:40%;
+	padding-bottom:40px;
+}
+/*.aki{
+	float:left;
+	width:50%;
+	padding-bottom:20px;
+}*/
+.anime_man,.cd,.aki,.misty{
+	width:50%;/*50*/
+}
+.misty{
+	padding-bottom:30px;
+	
+}
+}
+
+@media screen and (max-width:1150px){
+.anime_man,.cd,.aki,.misty{
+	width:50%;
+}
+}
+
+@media screen and (max-width:1100px){
+.anime_man,.cd,.aki, .misty{
+	width:50%;/*48*/
+}}
+
+@media screen and (max-width:1050px){
+.anime_man,.cd,.aki, .misty{
+	width:50%;/*48*/
+}}
+
+@media screen and (max-width:1000px){
+.anime_man,.cd,.aki, .misty{
+	width:50%;/*48*/
+}
+.misty{
+padding-bottom:20px;
+}
+}
+
+@media screen and (max-width:915px){
+	.anime_man,.cd,.aki, .misty{
+	width:100%;
+}
+.aki{
+	padding-bottom:20px;
+}
+}
+
+@media screen and (max-width:900px){
+	.why_images{
+		padding-bottom:400px;
+	}
+.manga_aot{
+	padding-bottom:5px;
+}
+.solo_book{
+	padding-bottom:70px;
+}
+.nogame_nolife_class{
+	padding-bottom:5px;
+}
+.over_lord{
+	padding-bottom:140px;
+}
+.solo_web{
+	padding-bottom:50px;
+}
+.anime_man,.cd,.aki, .misty{
+	width:100%;
+}
+.misty{
+	padding-bottom:50px;
+}
+.aki{
+	padding-bottom:20px;
+}
+}
+
+@media screen and (max-width:800px){
+	.navbar a{
+	float:none;
+	width:100%;
+	display: block;
+}
+.dropdown{
+	text-align: center;
+	display:block;
+	width:100%;
+	float:none;
+}
+.dropbtn{
+	text-align:center;
+	width:100%;
+	float:none;
+	display:block;
+}
+.dropdown-content{
+	width:50%;
+	text-align:center;
+}
+.hxh_anime{
+	margin-bottom:15px;
+}
+.gintama_ani{
+	margin-bottom:10px;
+}
+.aot_anime{
+	margin-bottom:10px;
+}
+.manga_aot{
+	padding-bottom:10px;
+}
+.solo_book{
+	padding-bottom:70px;
+}
+.fun_2{
+	padding-bottom:10px;
+}
+
+}
+
+
+@media screen and (max-width:700px){
+	.navbar a{
+	float: left;
+}
+.dropdown{
+float:left;
+display: block;	
+}
+.jojo_class,.gintama_class,.dom_class,.solo_book{
+	width:100%;
+}
+.hxh_anime{
+	padding-bottom:5px;
+}
+.gintama_ani{
+	padding-bottom:5px;
+}
+.aot_anime{
+	padding-bottom:10px;
+
+}
+.jojo_class{
+	padding-bottom:10px;
+}
+.solo_book{
+	padding-bottom:10px;
+}
+.wolf{
+	padding-bottom:30px;
+}
+.fun_2{
+	padding-bottom:10px;
+}
+}
+
+@media screen and (max-width:600px){
+	.why_images{
+	padding-bottom: 130px;
+}
+.hxh_anime{
+	padding-bottom:5px;
+}
+.gintama_ani{
+	padding-bottom:5px;
+}
+.aot_anime{
+	padding-bottom:10px;
+}
+.fun_2{
+	padding-bottom:10px;
+}}
+
+@media screen and (max-width:500px){
+.gon{
+	width:400px;
+}
+.misty_chron,.akid, .cdawg_vid,.joe{
+width:242;	
+}
+.slide_2{
+	width:200px;
+	height:300px;
+}
+}
+
+@media screen and (max-width:400px){
+.navbar a{
+	float:none;
+	width:100%;
+	display: block;
+}
+.dropdown{
+	text-align: center;
+	display:block;
+	width:100%;
+	float:none;
+}
+.dropbtn{
+	text-align:center;
+	width:100%;
+	float:none;
+	display:block;
+}
+.dropdown-content{
+	width:50%;
+	text-align:center;
+}
+.jojo_class,.gintama_class,.dom_class{
+	width:100%;
+}
+.hxh_anime{
+	margin-bottom:15px;
+}
+.gintama_ani{
+	margin-bottom:10px;
+}
+.aot_anime{
+	margin-bottom:10px;
+}
+.gon{
+width:370px;	
+}}

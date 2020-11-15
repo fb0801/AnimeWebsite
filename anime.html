@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en"><!--declare the language of the page-->
+<head>
+<title>Anime Addict-Anime</title><!--Display as site tab title-->
+<link rel="shortcut icon" type="image/x-icon" href="images/anime_logo.ico"> <!--adds a image to the title-->
+
+<link rel="stylesheet" type="text/css" href="anime_style.css">
+			<!-- link css and html-->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<!--make the webpage fit the screen-->
+</head>
+<body>
+
+<div class="dif">
+
+<a href="index.html"><img class ="logo" src="images/logo.jpg" alt="Logo" title="return to mainpage"></a>
+<h1 id="no_head">Anime Addict</h1>
+<br><br><br><br></div>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="why_anime.html">Why you should watch anime?</a>
+<a href="anime.html">Anime</a>
+<div class="dropdown">
+    <button class="dropbtn">Books 
+    </button>
+    <div class="dropdown-content">
+	  <a href="books.html">Books</a>
+      <a href="manga.html">Manga</a>
+      <a href="light_novel.html">Light novel</a>
+      <a href="webtoons.html">Webtoons</a>
+    </div>
+	</div> 
+<a href="service.html">Anime services</a>
+<a href="feedback.html">Feedback</a>
+<img id="theme" src="images/moonedit.jpg" onclick="changeBGC('#000000')" ondblclick="changeBGC('#ffffff')" title="change theme" alt="change theme">
+<img class="theme_2" src="images/website_font.jpg" onclick="changesize()" ondblclick="changeback()" title="change font" alt="change font">
+</div>
+<h1 id="anime_head">Anime</h1>
+<p id="anime_intro">Welcome to Anime Addict's Anime page where you can find different types of Anime we recommend you should watch</p><br>
+<div class="hxh_anime">
+<p id="anime_info"><img class="hxh_cover" src="images/hxhcover.jpg" alt="image of Hunter X Hunter" title="Hunter x Hunter 2011">Hunter x Hunter is set in a world where Hunters exist to perform all manner of dangerous tasks like capturing criminals and bravely searching for lost treasures in uncharted territories. Twelve-year-old Gon Freecss is determined to become the best Hunter possible in hopes of finding his father, who was a Hunter himself and had long ago abandoned his young son. However, Gon soon realizes the path to achieving his goals is far more challenging than he could have ever imagined.<br><br>
+Along the way to becoming an official Hunter, Gon befriends the lively doctor-in-training Leorio, vengeful Kurapika, and rebellious ex-assassin Killua. To attain their own goals and desires, together the four of them take the Hunter Exam, notorious for its low success rate and high probability of death. Throughout their journey, Gon and his friends embark on an adventure that puts them through many hardships and struggles. They will meet a plethora of monsters, creatures, and characters&mdash;
+all while learning what being a Hunter truly means. (source: <a class="edit_link" href="https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011?q=hunter%20x%20>" target="_blank" title="information on Hunter x Hunter">myanimelist</a>) <audio controls><source src="audio/hxh.mp3"type="audio/mpeg">Not supported></audio></p><br><br><br>
+</div>
+<div class="gintama_ani"><img class="gin_cover" src="images/gintama_anime.jpg" alt="Image of Gintama" title="Gintama"><p id="anime_info_2">Gintama:<br><br>The Amanto, aliens from outer space, have invaded Earth and taken over feudal Japan. As a result, a prohibition on swords has been established, and the samurai of Japan are treated with disregard as a consequence.
+<br>However one man, Gintoki Sakata, still possesses the heart of the samurai, although from his love of sweets and work as a yorozuya, one might not expect it. Accompanying him in his jack-of-all-trades line of work are Shinpachi Shimura, a boy with glasses and a strong heart, Kagura with her umbrella and seemingly bottomless stomach, as well as Sadaharu, their oversized pet dog. Of course, these odd jobs are not always simple, as they frequently have run-ins with the police, ragtag rebels, and assassins, oftentimes leading to humorous but unfortunate consequences.
+<br>Who said life as an errand boy was easy? (source: <a class="edit_link" href="https://myanimelist.net/anime/918/Gintama?q=gintama>" target="_blank" title="information on Gintama">myanimelist</a>) <audio controls><source src="audio/gint.mp3"type="audio/mpeg">Not supported></audio></p><br><br>
+</div>
+<div class="aot_anime"><img class ="AOT_cover" src="images/aot_3.jpg" alt="Attack On Titan cover" title="Attack On Titan"><p id="AOT_info">Attack On Titan:<br><br>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, forcing humans to hide in fear behind enormous concentric walls. What makes these giants truly terrifying is that their taste for human flesh is not born out of hunger but what appears to be out of pleasure. To ensure their survival, the remnants of humanity began living within defensive barriers, resulting in one hundred years without a single titan encounter. However, that fragile calm is soon shattered when a colossal titan manages to breach the supposedly impregnable outer wall, reigniting the fight for survival against the man-eating abominations.<br>
+<br>After witnessing a horrific personal loss at the hands of the invading creatures, Eren Yeager dedicates his life to their eradication by enlisting into the Survey Corps, an elite military unit that combats the merciless humanoids outside the protection of the walls. Based on Hajime Isayama's award-winning manga, Shingeki no Kyojin follows Eren, along with his adopted sister Mikasa Ackerman and his childhood friend Armin Arlert, as they join the brutal war against the titans and race to discover a way of defeating them before the last walls are breached.
+ (source: <a class="edit_link" href="https://myanimelist.net/anime/16498/Shingeki_no_Kyojin?q=attack%20" target="_blank" title="Information on Attack On Titan">myanimelist)</a> <audio controls><source src="audio/aot.mp3"type="audio/mpeg">Not supported></audio></p>
+</div><br><br>
+
+<div class="bottom_sec">
+<p>&copy; This is a demonstration website for LSBU (London Southbank University) all images and text is from, wikipedia, myanimelist, Crunchyroll, tenor, mangarock</p>
+</div>
+
+<button onclick="topfunc()" id="mybtn" title="Go to top">Top</button>
+<script>
+function changeBGC(color){
+if (color=='#000000'){
+		document.body.style.backgroundColor = color;
+		document.getElementById('anime_head').style.color='white';
+		document.getElementById('theme').src='images/sunedit.jpg';
+		document.getElementById('anime_intro').style.color='white';
+		document.getElementById('anime_info').style.color='white';
+		document.getElementById('anime_info_2').style.color='white';
+		document.getElementById('AOT_info').style.color='white';
+	}else{
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/moonedit.jpg';
+		document.getElementById('anime_head').style.color='black';
+		document.getElementById('anime_intro').style.color='black';
+		document.getElementById('anime_info').style.color='black';
+		document.getElementById('anime_info_2').style.color='black';
+		document.getElementById('AOT_info').style.color='black';
+
+  //document.getElementById("theme").style.display= "block";}
+  }}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("mybtn");
+
+// When the user scrolls down 10px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topfunc() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+function changesize(){
+// loop through the document to find all p and change the size
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='20px';
+		
+}}
+function changeback(){
+// loop through the document to find all <p> and change the size back
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='16px';
+}}
+</script>
+
+</body>
+</html>

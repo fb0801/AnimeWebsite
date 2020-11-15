@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><!--declare the language of the page-->
+<head>
+<title>Anime Addict-Feedback</title><!--Display as site tab title-->
+<link rel="shortcut icon" type="image/x-icon" href="images/anime_logo.ico"> <!--adds a image to the title-->
+
+<link rel="stylesheet" type="text/css" href="anime_style.css">
+			<!-- link css and html-->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<!--make the webpage fit the screen-->
+</head>
+<body>
+
+<div class="dif">
+
+<a href="index.html"><img class ="logo" src="images/logo.jpg" alt="Logo" title="return to mainpage"></a>
+<h1 id="no_head">Anime Addict</h1>
+<br><br><br><br></div>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="why_anime.html">Why you should watch anime?</a>
+<a href="anime.html">Anime</a>
+<div class="dropdown">
+    <button class="dropbtn">Books 
+    </button>
+    <div class="dropdown-content">
+	  <a href="books.html">Books</a>
+      <a href="manga.html">Manga</a>
+      <a href="light_novel.html">Light novel</a>
+      <a href="webtoons.html">Webtoons</a>
+    </div>
+	</div> 
+<a href="service.html">Anime services</a>
+<a href="feedback.html">Feedback</a>
+<img id="theme" src="images/moonedit.jpg" onclick="changeBGC('#000000')" ondblclick="changeBGC('#ffffff')" title="change theme" alt="change theme">
+<img class="theme_2" src="images/website_font.jpg" onclick="changesize()" ondblclick="changeback()" title="change font" alt="change font">
+</div>
+<h1 id="anime_head">Anime Addict Feedback</h1>
+<p id="anime_intro">Welcome to Anime Addict's Feedback page where you can give us some feedback on the website, recommendations for Anime, lightnovels, webtoons, Manga we should add, what improvements we could do to make the website better.</p><br>
+
+<h2 id="sub_head">Did you find this page helpful?</h2><img class="gon" src="images/Gon_hxh.gif" alt="Picture of HXH Gon thinking" title="Gon thinking">
+<p id="edit_txt">If you did or didnt find this website helpful then please leave some feedback on how
+we can improve or what you liked about the site below</p>
+
+<div class="feedback_form"><form autocomplete='off' action='sendemail.php' method='post'>
+<label id='name_lbl'>First name:</label>
+<input type='text' name='firstname' title="Enter name" placeholder="John smith" required>
+<br><label id="email_lbl">Email:</label>
+<input type="email" size="40" title="Enter Email" name="femail" placeholder="Johnsmith123@example" required>
+
+<br><br><textarea class="txtarea" rows="10" cols="50" name="message" required></textarea>
+<div class="feed_btn"><input id="btn" type ="Submit" value="Submit" title="submit data">
+<input id="btn" type="reset" title="reset inputfeilds"></div></div>
+</form>
+	
+<div class="bottom_sec">
+<p>&copy; This is a demonstration website for LSBU (London Southbank University) all images and text is from, wikipedia, myanimelist, Crunchyroll, tenor, mangarock</p>
+</div>
+
+<button onclick="topfunc()" id="mybtn" title="Go to top">Top</button>
+<script>
+function changeBGC(color){
+if (color=='#000000'){
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/sunedit.jpg';
+		document.getElementById('anime_head').style.color='white';
+		document.getElementById('anime_intro').style.color='white';
+		document.getElementById('name_lbl').style.color='white';
+		document.getElementById('email_lbl').style.color='white';
+		document.getElementById('sub_head').style.color='white';
+		document.getElementById('edit_txt').style.color='white';
+	}else{
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/moonedit.jpg';
+		document.getElementById('anime_head').style.color='black';
+		document.getElementById('anime_intro').style.color='black';
+		document.getElementById('email_lbl').style.color='black';
+		document.getElementById('name_lbl').style.color='black';
+		document.getElementById('sub_head').style.color='black';
+		document.getElementById('edit_txt').style.color='black';
+  //document.getElementById("theme").style.display= "block";}
+  }}
+function changesize(){
+// loop through the document to find all p and change the size
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='20px';
+		
+}}
+function changeback(){
+// loop through the document to find all <p> and change the size back
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='16px';
+		
+}}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("mybtn");
+
+// When the user scrolls down 10px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topfunc() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

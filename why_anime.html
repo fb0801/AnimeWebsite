@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en"><!--declare the language of the page-->
+<head>
+<title>Anime Addict-Why</title><!--Display as site tab title-->
+<link rel="shortcut icon" type="image/x-icon" href="images/anime_logo.ico"> <!--adds a image to the title-->
+<link rel="stylesheet" type="text/css" href="anime_style.css">
+			<!-- link css and html-->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<!--make the webpage fit the screen-->
+</head>
+<div class="dif">
+
+<body>
+<a href="index.html"><img class ="logo" src="images/logo.jpg" alt="Logo" title="return to mainpage"></a>
+<h1 id="no_head">Anime Addict</h1>
+<br><br><br><br></div>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="why_anime.html">Why you should watch anime?</a>
+<a href="anime.html">Anime</a>
+<div class="dropdown">
+    <button class="dropbtn">Books 
+    </button>
+    <div class="dropdown-content">
+	  <a href="books.html"> Books</a>
+      <a href="manga.html">Manga</a>
+      <a href="light_novel.html">Light novel</a>
+      <a href="webtoons.html">Webtoons</a>
+    </div>
+	</div> 
+<a href="service.html">Anime services</a>
+<a href="feedback.html">Feedback</a>
+<img id="theme" src="images/moonedit.jpg" onclick="changeBGC('#000000')" ondblclick="changeBGC('#ffffff')" title="change theme" alt="change theme">
+<img class="theme_2" src="images/website_font.jpg" onclick="changesize()" ondblclick="changeback()" title="change font" alt="change font">
+</div>
+<h1 id="anime_head">Why you should watch anime</h1>
+<div class="why_images">
+<img id="gint_1" alt="Gintama gif" src="images/gintama_funny.gif" title="Gintoki gif">
+<img id="gint_2" alt="Elizabeth fighting someone" src="images/elizabeth.gif" title="Elizabeth gif"><br><br>
+<p id="why_anime">Have you ever thought about watching anime, probably thought it was childish to watch cartoons at your age or simply don't know which anime to choose?<br>Anime can change your life and open many doors for you, by watching anime you can escape reality sit back and relax and join in with others on the latest anime jokes they talk about.</p>
+</div><br>
+<div class="bottom_sec">
+<p>&copy; This is a demonstration website for LSBU (London Southbank University) all images and text is from, wikipedia, myanimelist, Crunchyroll, tenor, mangarock</p>
+</div>
+<script>
+function changeBGC(color){
+	if (color=='#000000'){
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/sunedit.jpg';
+		document.getElementById('anime_head').style.color='white';
+		document.getElementById('why_anime').style.color='white';
+		
+	}else{
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/moonedit.jpg';
+		document.getElementById('anime_head').style.color='black';
+		document.getElementById('why_anime').style.color='black';
+
+  //document.getElementById("theme").style.display= "block";}
+  }}
+
+function changesize(){
+// loop through the document to find all p and change the size
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='20px';
+		
+}}
+function changeback(){
+// loop through the document to find all <p> and change the size back
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='16px';
+		
+}}
+</script>
+
+</body>
+</html>

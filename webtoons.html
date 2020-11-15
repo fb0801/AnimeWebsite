@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><!--declare the language of the page-->
+<head>
+<title>Anime Addict-Webtoons</title><!--Display as site tab title-->
+<link rel="shortcut icon" type="image/x-icon" href="images/anime_logo.ico"> <!--adds a image to the title-->
+
+<link rel="stylesheet" type="text/css" href="anime_style.css">
+			<!-- link css and html-->
+<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+<!--make the webpage fit the screen-->
+</head>
+<body>
+
+<div class="dif">
+
+<a href="index.html"><img class ="logo" src="images/logo.jpg" alt="Logo" title="return to mainpage"></a>
+<h1 id="no_head">AA</h1>
+<br><br><br><br></div>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="why_anime.html">Why you should watch anime?</a>
+<a href="anime.html">Anime</a>
+<div class="dropdown">
+    <button class="dropbtn">Books 
+    </button>
+    <div class="dropdown-content">
+	  <a href="books.html">Books</a>
+      <a href="manga.html">Manga</a>
+      <a href="light_novel.html">Light novel</a>
+      <a href="webtoons.html">Webtoons</a>
+    </div>
+	</div> 
+<a href="service.html">Anime services</a>
+<a href="feedback.html">Feedback</a>
+<img id="theme" src="images/moonedit.jpg" onclick="changeBGC('#000000')" ondblclick="changeBGC('#ffffff')" title="change theme" alt="change theme">
+<img class="theme_2" src="images/website_font.jpg" onclick="changesize()" ondblclick="changeback()" title="change font" alt="change font">
+</div>
+<h1 id="anime_head">Webtoons</h1>
+<p id="web_intro">Welcome to Anime Addict's Webtoons page where you can find different recommendations you should read</p><br>
+
+<div class="solo_web">
+<p id="solo_lvl"><img class="solo" src="images/solo_lvl.jpg" title="Solo leveling cover">Solo Leveling:<br><br>Ten years ago, after "the Gate" that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt monsters within the Gate. They are known as "Hunters." However, not all Hunters are powerful. My name is Sung Jin-Woo, an E-rank Hunter. 
+I'm someone who has to risk his life in the lowliest of dungeons, the "World's Weakest." Having no skills whatsoever to display, I barely earned the required money by fighting in low-leveled dungeons... at least until I found a hidden dungeon with the hardest difficulty within the D-rank dungeons! In the end, as I was accepting death, I suddenly received a strange power, 
+a quest log that only I could see, a secret to leveling up that only I know about! If I trained in accordance with my quests and hunted monsters, my level would rise. Changing from the weakest Hunter to the strongest S-rank Hunter! (source: <a class="edit_link" href="https://myanimelist.net/manga/121496/Solo_Leveling?q=solo" target="_blank">myanimelist)</a> <audio controls><source src="audio/solo.mp3"type="audio/mpeg">Not supported></audio></p>
+</div><br>
+
+<div class="TGOHS"><img class="god_ohs" src="images/high_school.jpg"><p id="high_school">The God of High School:<br><br>It all began as a fighting tournament to seek out for the best fighter among all high school students in Korea. Mori Jin, a Taekwondo specialist and a high school student, soon learns that there is something much greater beneath the stage of the tournament. (source: <a class="edit_link" href="https://myanimelist.net/manga/111996/The_God_of_High_School?q=god%20of" target="_blank">myanimelist)</a> <audio controls><source src="audio/tgohs.mp3"type="audio/mpeg">Not supported></audio></p>
+</div><br>
+
+<div class="tower_of_god">
+<img src="images/TOG.jpg" class="TOG_img"><p id="TOG">Tower of God centers around a boy called Twenty-Fifth Bam, who has spent most of his life trapped beneath a vast and mysterious Tower, with only his close friend, Rachel, to keep him company. When Rachel enters the Tower, Bam manages to open the door into it as well, and faces challenges at each floor of this tower as he tries to find his closest companion.(source: <a class="edit_link" href="https://myanimelist.net/manga/122663/Tower_of_God?q=tower%20" target="_blank">myanimelist)</a> <audio controls><source src="audio/tog.mp3"type="audio/mpeg">Not supported></audio></p>
+</div><br>
+
+<div class="bottom_sec">
+<p>&copy; This is a demonstration website for LSBU (London Southbank University) all images and text is from, wikipedia, myanimelist, Crunchyroll, tenor, mangarock</p>
+</div>
+
+<button onclick="topfunc()" id="mybtn" title="Go to top">Top</button>
+<script>
+function changeBGC(color){
+if (color=='#000000'){
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/sunedit.jpg';
+		document.getElementById('anime_head').style.color='white';
+		document.getElementById('web_intro').style.color='white';
+		document.getElementById('solo_lvl').style.color='white';
+		document.getElementById('TOG').style.color='white';
+		document.getElementById('high_school').style.color='white';
+	}else{
+		document.body.style.backgroundColor = color;
+		document.getElementById('theme').src='images/moonedit.jpg';
+		document.getElementById('anime_head').style.color='black';
+		document.getElementById('web_intro').style.color='black';
+		document.getElementById('solo_lvl').style.color='black';
+		document.getElementById('TOG').style.color='black';
+		document.getElementById('high_school').style.color='black';
+  //document.getElementById("theme").style.display= "block";}
+  }}
+function changesize(){
+// loop through the document to find all p and change the size
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='20px';
+		
+}}
+function changeback(){
+// loop through the document to find all <p> and change the size back
+var i,text= document.querySelectorAll('p');
+for (i=0; i< text.length; i++){ 
+ text[i].style.fontSize='16px';
+		
+}}
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("mybtn");
+
+// When the user scrolls down 10px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topfunc() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
